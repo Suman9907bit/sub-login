@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Login Panel</title>
+    <style>
+        *{box-sizing:border-box;}
+        body{
+            margin:0;
+            font-family:Segoe UI, Arial, sans-serif;
+            background:white;
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .wrapper{
+            width:90%;
+            max-width:1100px;
+            background:#fff;
+            border-radius:16px;
+            box-shadow:0 20px 40px rgba(0,0,0,.25);
+            display:flex;
+            overflow:hidden;
+        }
+        /* Left logo section */
+        .left{
+            flex:1.2;
+            background:white;
+            color:navy;
+            padding:40px 30px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+        }
+        .left img{
+            width:180px;
+            max-width:80%;
+            margin-bottom:20px;
+        }
+        .left h1{
+            margin:10px 0;
+            font-size:28px;
+            letter-spacing:1px;
+        }
+        .left p{
+            opacity:.9;
+            font-size:15px;
+            line-height:1.6;
+        }
+        /* Right login section */
+        .right{
+            flex:1;
+            padding:50px 40px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+        .right h2{
+            margin-bottom:30px;
+            color:#222;
+            font-size:26px;
+        }
+        .login-btn{
+            text-decoration:none;
+            padding:16px 20px;
+            margin-bottom:20px;
+            border-radius:12px;
+            font-size:18px;
+            font-weight:600;
+            text-align:center;
+            transition:.3s;
+            display:block;
+        }
+        .admin{
+            background:blue;
+            color:#fff;
+        }
+        .admin:hover{background:#141a4f;}
+        .student{
+            background:orange;
+            color:#fff;
+        }
+        .student:hover{background:#9e2a50;}
+        .note{
+            font-size:13px;
+            color:#555;
+            margin-top:10px;
+        }
+        /* Responsive */
+        @media(max-width:768px){
+            .wrapper{flex-direction:column;}
+            .left,.right{padding:35px 25px;}
+            .left img{width:140px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Left: Logo -->
+        <div class="left">
+            <!-- Replace logo.png with your logo -->
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMWBKH-2GigRZ_OYEcaRzOF_2KI-Zpk-ApVth6w=s1360-w1360-h1020-rw"" alt="Institute Logo">
+            <h1>Digital Future IT</h1>
+            <p>Smart learning • Professional training • Future ready skills</p>
+        </div>
+        <!-- Right: Login options -->
+        <div class="right">
+            <h2>Login Panel</h2>
+            <!-- Add your login page links -->
+            <a href="https://suman9907bit.github.io/official-work/" class="login-btn admin">Officeal Login</a>
+            <a href="https://suman9907bit.github.io/JOS/" class="login-btn student">Cybercaf Login</a>
+            <div class="note">* </div>
+        </div>
+    </div>
+</body>
+</html>
